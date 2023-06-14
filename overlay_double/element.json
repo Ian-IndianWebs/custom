@@ -80,9 +80,23 @@
             "label": "Title",
             "source": true
         },
+        "title_double": {
+            "label": "Double Title",
+            "description": "Enter the double title.",
+            "type": "text",
+            "source": true,
+            "show": "!title"
+        },
         "meta": {
             "label": "Meta",
             "source": true
+        },
+        "meta_double": {
+            "label": "Double Meta",
+            "description": "Enter the double meta.",
+            "type": "text",
+            "source": true,
+            "show": "!meta"
         },
         "content": {
             "label": "Content",
@@ -486,6 +500,88 @@
             },
             "enable": "title"
         },
+        "title_double_element": {
+            "label": "HTML Element",
+            "description": "Choose the HTML element for your heading.",
+            "type": "select",
+            "default": "h3",
+            "options": {
+                "h1": "h1",
+                "h2": "h2",
+                "h3": "h3",
+                "h4": "h4",
+                "h5": "h5",
+                "h6": "h6",
+                "div": "div"
+            },
+            "show": "title_double"
+        },
+        "title_double_style": {
+            "label": "Title Style",
+            "description": "Title styles differ in font-size but may also come with a predefined color, size and font.",
+            "type": "select",
+            "default": "",
+            "options": {
+                "Default": "",
+                "Small": "small",
+                "Medium": "medium",
+                "Large": "large"
+            },
+            "show": "title_double"
+        },
+        "title_double_color": {
+            "label": "Title Color",
+            "description": "Set the text color.",
+            "type": "select",
+            "default": "",
+            "options": {
+                "Default": "",
+                "Muted": "muted",
+                "Primary": "primary",
+                "Success": "success",
+                "Warning": "warning",
+                "Danger": "danger",
+                "Text color of the overlay": "background"
+            },
+            "show": "title_double"
+        },
+        "title_double_decoration": {
+            "label": "Title Decoration",
+            "description": "Decorate the headline with a divider, bullet or a line that is vertically centered to the heading.",
+            "type": "select",
+            "default": "",
+            "options": {
+                "None": "",
+                "Divider": "divider",
+                "Bullet": "bullet",
+                "Line": "line"
+            },
+            "show": "title_double"
+        },
+        "title_double_font_family": {
+            "label": "Font Family",
+            "description": "Choose a different font family.",
+            "type": "select",
+            "default": "",
+            "options": {
+                "Default": "",
+                "Secondary": "secondary"
+            },
+            "show": "title_double"
+        },
+        "title_double_transform": {
+            "label": "Text Transform",
+            "description": "Make the text uppercase or lowercase.",
+            "type": "select",
+            "default": "",
+            "options": {
+                "None": "",
+                "Uppercase": "uppercase",
+                "Capitalize": "capitalize",
+                "Lowercase": "lowercase"
+            },
+            "show": "title_double"
+        },
         "meta_transition": {
             "label": "Transition",
             "description": "Select a transition for the meta text when the overlay appears on hover.",
@@ -589,6 +685,43 @@
                 "None": "remove"
             },
             "enable": "meta"
+        },
+        "meta_double_style": {
+            "label": "Meta Style",
+            "description": "Display meta text in a sentence or a horizontal list",
+            "type": "select",
+            "default": "",
+            "options": {
+                "List": "meta",
+                "Sentence": "sentence",
+                "Array": "array"
+            },
+            "show": "meta_double"
+        },
+        "meta_double_align": {
+            "label": "Meta Alignment",
+            "description": "Align the meta text above or below the title.",
+            "type": "select",
+            "default": "top",
+            "options": {
+                "Top": "top",
+                "Bottom": "bottom"
+            },
+            "show": "meta_double"
+        },
+        "meta_double_margin": {
+            "label": "Meta Margin",
+            "description": "Set the vertical margin.",
+            "type": "select",
+            "default": "small",
+            "options": {
+                "Small": "small",
+                "Default": "",
+                "Medium": "medium",
+                "Large": "large",
+                "None": "remove"
+            },
+            "show": "meta_double"
         },
         "content_transition": {
             "label": "Transition",
